@@ -1,0 +1,50 @@
+.hero {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto 350px auto;
+}
+
+.hero .container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+.hero-title {
+  font-weight: 500;
+  font-size: 80px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #fbfbfb;
+  margin-bottom: 24px;
+}
+.hero-subscribe {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.4;
+  text-align: center;
+  color: #b4b7ba;
+  max-width: 597px;
+  margin: 0 auto 48px auto;
+}
+.hero-button {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+  border-radius: 15px;
+  padding: 16px 40px;
+  background-color: #1b414b;
+  margin: 0 auto;
+  transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color, background-color;
+}
+
+.hero-button:hover,
+.hero-button:active,
+.hero-button:focus {
+  color: #1b414b;
+  background-color: #fbfbfb;
+}

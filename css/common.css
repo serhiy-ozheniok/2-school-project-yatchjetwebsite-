@@ -1,0 +1,88 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #0e1823;
+  background-image:
+    linear-gradient(
+      358.99deg,
+      rgba(17, 19, 31, 0.8) 42.62%,
+      rgba(17, 19, 31, 0.31) 84.14%,
+      rgba(17, 19, 31, 0) 99.97%
+    ),
+    image-set(
+      url('../images/hero_desk.jpg') 1x,
+      url('../images/hero_desk_2x.jpg') 2x
+    );
+
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 1280px 800px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.sr-only {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  margin: -1px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  border-radius: 15px;
+  padding: 16px 40px;
+  width: 179px;
+  height: 52px;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+a,
+button,
+.btn,
+[type='button'],
+[type='submit'] {
+  cursor:
+    url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAxNyAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTAuODkgNy42OUwxMS41MiA3LjgyTDE1LjY5IDkuOUMxNi4zOSAxMC4xMyAxNi44NSAxMC44MiAxNi43OSAxMS41NlYxMS44MkwxNS44OSAxNy45NEMxNS44MyAxOC4zNyAxNS42NCAxOC43NyAxNS4yOSAxOS4wNUMxNC45OCAxOS4zNSAxNC41NyAxOS41IDE0LjE0IDE5LjVINy4yNkM2Ljc3IDE5LjUgNi4zMiAxOS4zMiA1Ljk5IDE4Ljk3TDAgMTNMMC45IDEyQzEuMTQgMTEuNzUgMS41MiAxMS42MSAxLjg4IDExLjYzSDIuMTdMNi4xNCAxMi41VjJDNi4xNCAxLjQ2OTU3IDYuMzUwNzEgMC45NjA4NTkgNi43MjU3OSAwLjU4NTc4NkM3LjEwMDg2IDAuMjEwNzE0IDcuNjA5NTcgMCA4LjE0IDBDOC42NzA0MyAwIDkuMTc5MTQgMC4yMTA3MTQgOS41NTQyMSAwLjU4NTc4NkM5LjkyOTI5IDAuOTYwODU5IDEwLjE0IDEuNDY5NTcgMTAuMTQgMlY3LjY5SDEwLjg5WiIgZmlsbD0iI0ZCRkJGQiIvPjwvc3ZnPg==')
+      12 1,
+    pointer !important;
+}
