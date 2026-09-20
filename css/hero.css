@@ -1,7 +1,21 @@
 .hero {
   width: 100%;
-  max-width: 1000px;
-  margin: 0 auto 350px auto;
+  max-width: 335px;
+  margin: 0 auto 380px auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero {
+    max-width: 650px;
+    margin: 0 auto 300px auto;
+  }
+}
+
+@media only screen and (min-width: 1180px) {
+  .hero {
+    max-width: 1000px;
+    margin: 0 auto 350px auto;
+  }
 }
 
 .hero .container {
@@ -12,30 +26,58 @@
 }
 .hero-title {
   font-weight: 500;
-  font-size: 80px;
+  font-size: 32px;
   line-height: 1;
   letter-spacing: -0.02em;
   text-align: center;
   color: #fbfbfb;
   margin-bottom: 24px;
 }
+
+@media only screen and (min-width: 768px) {
+  .hero-title {
+    font-size: 70px;
+  }
+}
+
+@media only screen and (min-width: 1180px) {
+  .hero-title {
+    font-size: 80px;
+  }
+}
+
 .hero-subscribe {
   font-weight: 300;
-  font-size: 16px;
-  line-height: 1.4;
+  font-size: 12px;
+  line-height: 1.17;
   text-align: center;
   color: #b4b7ba;
   max-width: 597px;
   margin: 0 auto 48px auto;
 }
+
+@media only screen and (min-width: 768px) {
+  .hero-subscribe {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+}
+
 .hero-button {
+  display: flex;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 1.1;
+  font-size: 14px;
+  line-height: 1.28;
   letter-spacing: -0.02em;
   color: #fbfbfb;
   border-radius: 15px;
-  padding: 16px 40px;
+  padding: 14px 32px;
+  width: 141px;
+  height: 46px;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  color: #fbfbfb;
   background-color: #1b414b;
   margin: 0 auto;
   transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
@@ -47,4 +89,14 @@
 .hero-button:focus {
   color: #1b414b;
   background-color: #fbfbfb;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-button {
+    font-size: 18px;
+    line-height: 1.1;
+    padding: 16px 40px;
+    width: 179px;
+    height: 52px;
+  }
 }

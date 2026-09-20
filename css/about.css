@@ -1,29 +1,72 @@
 .about {
   width: 100%;
-  max-width: 1181px;
-  margin: 150px auto;
+  max-width: 335px;
+  margin: 0 auto 100px auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .about {
+    max-width: 704px;
+    margin: 0 auto 120px auto;
+  }
+}
+
+@media only screen and (min-width: 1180px) {
+  .about {
+    max-width: 1181px;
+    margin: 0 auto 150px auto;
+  }
 }
 .container {
 }
 .about-title {
   font-weight: 500;
-  font-size: 48px;
+  font-size: 28px;
   line-height: 1;
   letter-spacing: -0.02em;
   text-align: center;
   color: #fbfbfb;
   width: 100%;
-  max-width: 710px;
-  margin: 0 auto 75px auto;
+  max-width: 335px;
+  margin: 0 auto 40px auto;
 }
+
+@media only screen and (min-width: 768px) {
+  .about-title {
+    font-size: 48px;
+    max-width: 600px;
+    margin: 0 auto 75px auto;
+  }
+}
+
+@media only screen and (min-width: 1180px) {
+  .about-title {
+    max-width: 710px;
+  }
+}
+
 .about-cards {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: row;
   gap: 25px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
+
+@media only screen and (min-width: 768px) {
+  .about-cards {
+    margin-bottom: 50px;
+    gap: 32px;
+  }
+}
+
+@media only screen and (min-width: 1180px) {
+  .about-cards {
+    gap: 25px;
+  }
+}
+
 .abt-card {
   display: flex;
   flex-direction: column;
@@ -32,6 +75,29 @@
   background-color: #fbfbfb;
   padding: 16px 16px 32px 16px;
 }
+
+.benetti,
+.belle {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .abt-card {
+  }
+
+  .benetti {
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 1180px) {
+  .abt-card {
+  }
+  .belle {
+    display: flex;
+  }
+}
+
 .about-card-img {
   margin-bottom: 32px;
 }
@@ -58,20 +124,41 @@
 
 .card-titles-a {
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.2;
+  font-size: 14px;
+  line-height: 1.18;
   letter-spacing: -0.04em;
   text-transform: uppercase;
   color: #1b414b;
 }
+
+.abt-card.benetti .card-titles-a {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media only screen and (min-width: 768px) {
+  .card-titles-a {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+}
+
 .card-titles-b {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
-  font-size: 13px;
-  line-height: 1.18;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #989899;
+}
+
+@media only screen and (min-width: 768px) {
+  .card-titles-b {
+    font-size: 13px;
+    line-height: 1.18;
+  }
 }
 
 .abt-lists {
@@ -117,19 +204,24 @@
 }
 .abt-stats-item {
 }
+
 .about-btn {
   display: flex;
-  margin: 0 auto;
-  border: 1px solid rgba(251, 251, 251, 0.35);
-  border-radius: 15px;
-  padding: 16px 40px;
-  width: 179px;
-  height: 52px;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 1.1;
+  font-size: 14px;
+  line-height: 1.28;
   letter-spacing: -0.02em;
   color: #fbfbfb;
+  border-radius: 15px;
+  padding: 14px 32px;
+  width: 141px;
+  height: 46px;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  outline: 1px solid rgba(251, 251, 251, 0.35);
+  color: #fbfbfb;
+  margin: 0 auto;
   transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: color, background-color;
 }
@@ -139,4 +231,14 @@
 .about-btn:active {
   color: #1b414b;
   background-color: #fbfbfb;
+}
+
+@media only screen and (min-width: 768px) {
+  .about-btn {
+    font-size: 18px;
+    line-height: 1.1;
+    padding: 16px 40px;
+    width: 179px;
+    height: 52px;
+  }
 }

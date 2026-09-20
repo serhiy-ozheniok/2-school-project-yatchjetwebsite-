@@ -23,6 +23,11 @@
     <header class="header-nav" id="header">
       <div class="container">
         <a class="header-logo" href="_blank">yatchjet</a>
+        <button class="mobile-menu-btn-main" type="button">
+          <svg class="mobile-menu-btn-main-icon" width="21" height="7">
+            <use href="./images/icons.svg#vector"></use>
+          </svg>
+        </button>
         <div class="header-link-block">
           <ul class="header-list">
             <li class="header-item">
@@ -84,7 +89,7 @@
             Choose your dream yacht and sail away into the sunset
           </h2>
           <div class="about-cards">
-            <div class="abt-card">
+            <div class="abt-card arrow">
               <img
                 class="about-card-img"
                 src="./images/about_1.jpg"
@@ -118,7 +123,7 @@
                 </div>
               </div>
             </div>
-            <div class="abt-card">
+            <div class="abt-card benetti">
               <img
                 class="about-card-img"
                 src="./images/about_2.jpg"
@@ -152,7 +157,7 @@
                 </div>
               </div>
             </div>
-            <div class="abt-card">
+            <div class="abt-card belle">
               <img
                 class="about-card-img"
                 src="./images/about_3.jpg"
@@ -225,10 +230,11 @@
           <img
             class="features-img"
             src="./images/features.jpg"
-            alt=""
-            width="432"
-            height="424"
-            srcset="./images/features.jpg 1x, ./images/features_2x.jpg 2x"
+            alt="yatch, table and sofa"
+            srcset="
+              ./images/features_1_1x.jpg 1x,
+              ./images/features_1_2x.jpg 2x
+            "
           />
         </div>
       </section>
@@ -268,7 +274,7 @@
                   </p>
                 </div>
               </li>
-              <li class="reviews-item">
+              <li class="reviews-item romashenko">
                 <img
                   class="reviews-item-img"
                   src="./images/reviews_2.png"
@@ -290,7 +296,7 @@
                   </p>
                 </div>
               </li>
-              <li class="reviews-item">
+              <li class="reviews-item trachuk">
                 <img
                   class="reviews-item-img"
                   src="./images/reviews_3.png"
@@ -370,5 +376,55 @@
         </div>
       </div>
     </footer>
+    <div class="mobile-menu" id="mobile-menu">
+      <div class="mobile-menu-container">
+        <div class="mobile-menu-head">
+          <a class="mobile-menu-logo" href="_blank">yatchjet</a>
+          <button class="mobile-menu-btn" type="button">
+            <svg class="mobile-menu-icon" width="16" height="16">
+              <use href="./images/icons.svg#close"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="mobile-menu-body">
+          <ul class="mobile-menu-list">
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="#about">About</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="#features">Yachts</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="#reviews">Reviews</a>
+            </li>
+          </ul>
+        </div>
+        <div class="mobile-menu-socials">
+          <ul class="mobile-menu-socials-list">
+            <li class="mobile-menu-socials-items">
+              <a class="mobile-menu-socials-link" href="">
+                <svg class="mobile-menu-socials-icon" width="19" height="19">
+                  <use href="./images/icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu-socials-items">
+              <a class="mobile-menu-socials-link" href="">
+                <svg class="mobile-menu-socials-icon" width="20" height="20">
+                  <use href="./images/icons.svg#youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu-socials-items">
+              <a class="mobile-menu-socials-link" href="">
+                <svg class="mobile-menu-socials-icon" width="20" height="20">
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

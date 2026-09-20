@@ -13,7 +13,7 @@ body {
       url('../images/hero_desk_2x.jpg') 2x
     );
 
-  background-position: center top;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: 1280px 800px;
 }
@@ -64,16 +64,6 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-}
-
-button {
-  border-radius: 15px;
-  padding: 16px 40px;
-  width: 179px;
-  height: 52px;
-  background-color: transparent;
-  border: none;
-  box-shadow: none;
 }
 
 a,
